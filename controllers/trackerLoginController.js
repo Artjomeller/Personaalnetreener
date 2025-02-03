@@ -6,9 +6,9 @@ require('dotenv').config();
 
 const secretKey = process.env.SECRET_KEY;
 
-//Middleware для проверки аунтефикации
+//Middleware auth. kontrollimiseks
 function authenticateToken(req, res, next) {
-    const token = req.headers['authorization'] && req.headers['authorization'].split(' ')[1]; // Извлекаем токен из заголовка
+    const token = req.headers['authorization'] && req.headers['authorization'].split(' ')[1];
 
     if (!token) return res.sendStatus(401);
 

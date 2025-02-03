@@ -8,34 +8,45 @@
                 #caloriePlanModal {
                     display: none;
                 }
+
                 .daily-goal {
                     color: lightgreen;
                 }
+
                 .consumed-calories {
                     color: red;
                 }
+
                 .remained-calories {
                     color: yellow;
                 }
+
                 #extra-calorie-text {
                     padding-bottom: 5px;
                 }
             </style>
-            <div class="modal fade" id="caloriePlanModal" tabindex="-1" aria-labelledby="caloriePlanModalLabel" aria-hidden="true">
+            <div class="modal fade" id="caloriePlanModal" tabindex="-1" aria-labelledby="caloriePlanModalLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header text-black">
-                            <h5 class="modal-title" id="caloriePlanModalLabel"><%= translations.calories.modalTitle %></h5>
+                            <h5 class="modal-title"
+                                id="caloriePlanModalLabel"><%= translations.calories.modalTitle %></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body text-black">
                             <form id="calorie-plan-form">
                                 <div class="mb-3">
-                                    <label for="calorieGoal" class="form-label"><%= translations.calories.dailyGoalLabel %></label>
-                                    <input type="text" class="form-control" id="calorieGoal" placeholder="<%= translations.calories.dailyGoalPlaceholder %>" maxlength="4">
-                                    <p id="goal-input-error" style="color: red; display: none;"><%= translations.calories.goalError %></p>
+                                    <label for="calorieGoal"
+                                           class="form-label"><%= translations.calories.dailyGoalLabel %></label>
+                                    <input type="text" class="form-control" id="calorieGoal"
+                                           placeholder="<%= translations.calories.dailyGoalPlaceholder %>"
+                                           maxlength="4">
+                                    <p id="goal-input-error"
+                                       style="color: red; display: none;"><%= translations.calories.goalError %></p>
                                 </div>
-                                <button type="submit" class="btn btn-primary"><%= translations.calories.saveButton %></button>
+                                <button type="submit"
+                                        class="btn btn-primary"><%= translations.calories.saveButton %></button>
                             </form>
                         </div>
                     </div>
@@ -48,22 +59,32 @@
             <canvas id="calorie-chart"></canvas>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
-            <p id="extra-calorie-text" style="font-size: 19px;"><%= translations.calories.extraCalorieText %>: <span class="daily-goal" id="daily-goal-display"></span></p>
-            <p><%= translations.calories.consumedCalories %>: <span class="consumed-calories" id="consumed-calories"></span></p>
-            <p><%= translations.calories.remainedCalories %>: <span class="remained-calories" id="remained-calories"></span></p>
+            <p id="extra-calorie-text" style="font-size: 19px;"><%= translations.calories.extraCalorieText %>: <span
+                        class="daily-goal" id="daily-goal-display"></span></p>
+            <p><%= translations.calories.consumedCalories %>: <span class="consumed-calories"
+                                                                    id="consumed-calories"></span></p>
+            <p><%= translations.calories.remainedCalories %>: <span class="remained-calories"
+                                                                    id="remained-calories"></span></p>
             <form action="" id="add-calorie-form">
                 <label><%= translations.calories.caloriesInputLabel %></label>
-                <input id="calorie-add-input" type="text" placeholder="<%= translations.calories.caloriesInputPlaceholder %>" maxlength="4" style="max-width: 180px;">
+                <input id="calorie-add-input" type="text"
+                       placeholder="<%= translations.calories.caloriesInputPlaceholder %>" maxlength="4"
+                       style="max-width: 180px;">
                 <button class="btn btn-primary" type="submit"><%= translations.calories.submitButton %></button>
-                <button class="btn btn-primary" id="btn-change-calorie-plan" data-bs-toggle="modal" data-bs-target="#caloriePlanModal"><%= translations.calories.changePlanButton %></button>
+                <button class="btn btn-primary" id="btn-change-calorie-plan" data-bs-toggle="modal"
+                        data-bs-target="#caloriePlanModal"><%= translations.calories.changePlanButton %></button>
                 <p id="input-error" style="color: red; display: none;"><%= translations.calories.inputError %></p>
             </form>
         </div>
     </div>
     <div class="row mt-4">
         <div class="col-12">
-            <p><span style="color: rgb(255, 0, 0); font-weight: bold;"><%= translations.calories.legendConsumed %></span></p>
-            <p><span style="color: rgb(255, 255, 0); font-weight: bold;"><%= translations.calories.legendRemained %></span></p>
+            <p>
+                <span style="color: rgb(255, 0, 0); font-weight: bold;"><%= translations.calories.legendConsumed %></span>
+            </p>
+            <p>
+                <span style="color: rgb(255, 255, 0); font-weight: bold;"><%= translations.calories.legendRemained %></span>
+            </p>
         </div>
     </div>
 </div>
@@ -73,7 +94,7 @@
         try {
             const response = await fetch(url, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)
             });
 
@@ -88,7 +109,7 @@
 
     async function updateUI(data) {
         if (!data) return;
-        const { dailyGoal, calorieData } = data;
+        const {dailyGoal, calorieData} = data;
         document.getElementById('daily-goal-display').innerText = dailyGoal;
         const labels = calorieData.map(entry => entry.entry_date);
         const calories = calorieData.map(entry => entry.calories);
@@ -190,7 +211,7 @@
         errorElement.style.display = 'none';
 
         const email = localStorage.getItem('email');
-        const data = await handleFormSubmission('/add-calories', { email, calories });
+        const data = await handleFormSubmission('/add-calories', {email, calories});
         if (data) {
             alert("<%= translations.calories.caloriesInputSuccess %>");
             window.location.reload();
@@ -212,7 +233,7 @@
         errorElement.style.display = 'none';
 
         const email = localStorage.getItem('email');
-        const data = await handleFormSubmission('/set-calorie-plan', { email, daily_calorie_goal });
+        const data = await handleFormSubmission('/set-calorie-plan', {email, daily_calorie_goal});
         if (data) {
             alert("<%= translations.calories.caloriesInputSuccess %>");
             window.location.reload();
@@ -221,7 +242,7 @@
 
     (async () => {
         const email = localStorage.getItem('email');
-        const data = await handleFormSubmission('/get-calorie-data', { email });
+        const data = await handleFormSubmission('/get-calorie-data', {email});
         if (data) {
             updateUI(data);
         }

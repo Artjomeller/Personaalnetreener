@@ -61,7 +61,7 @@ async function assignEmailToPass(email) {
             return false;
         }
     } catch (err) {
-        console.error('Ошибка при назначении email:', err);
+        console.error('viga emaili kirjutamisel:', err);
         throw err;
     } finally {
         client.release();

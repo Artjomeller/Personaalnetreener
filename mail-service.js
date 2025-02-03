@@ -16,8 +16,8 @@ const mailOptions = {
         name: "Stanislav Jagutkin Fitness",
         address: process.env.MAIL_USER,
     },
-    to: ['stanislavjagutkin@gmail.com', 'valnos04@gmail.com'],
-    subject: `Новая заявка на тренировку`,
+    to: ['stanislavjagutkin@gmail.com'],
+    subject: `Uus bronering`,
     text: ''
 
 }

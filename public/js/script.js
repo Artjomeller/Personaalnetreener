@@ -34,12 +34,12 @@ function updateNavLinkHighlights() {
     }
 }
 
-var navCollapse = document.querySelector('.navbar-collapse');
+const navCollapse = document.querySelector('.navbar-collapse');
 
 navLinks.forEach(function (link) {
     link.addEventListener('click', function () {
         if (navCollapse.classList.contains('show')) {
-            var bsCollapse = new bootstrap.Collapse(navCollapse, {
+            const bsCollapse = new bootstrap.Collapse(navCollapse, {
                 toggle: true
             });
         }
@@ -138,7 +138,3 @@ scrollTopBtn.addEventListener('click', scrollToTop);
 window.addEventListener('scroll', handleScroll);
 
 updateNavLinkHighlights();
-
-
-
-
