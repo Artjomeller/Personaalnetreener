@@ -1,5 +1,5 @@
-const API_KEY = 'AIzaSyCZA197_HDxlwuZfiFEe--K2GBg9g27o-w';
-const CALENDAR_ID = 'stanislavjagutkin@gmail.com';
+const API_KEY = '';
+const CALENDAR_ID = '';
 const timePickers = document.querySelectorAll('.time-picker')
 const timePickerInput = document.querySelector('.time-picker-input');
 
