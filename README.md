@@ -1,45 +1,48 @@
-Personal Trainer Website & Fitness Tracker
-About The Project
+# Personal Trainer Website & Fitness Tracker
+
+## About The Project
+
 This project consists of a professional personal trainer website with an integrated fitness tracking system. The website serves as a platform for trainers to showcase their services and for clients to track their fitness progress.
+
 Live demo: www.yagutkinfitness.ee
+
 Test account for fitness tracker:
+- Email: test@test.ee
+- Password: Parool1
 
-Email: test@test.ee
-Password: Parool1
+## Features
 
-Features
+- 📱 Responsive design for all devices
+- 🌐 Multilingual support (Estonian and Russian)
+- 📊 Comprehensive fitness tracking system
+- 📅 Integration with Google Calendar for booking
+- 💪 Progress monitoring and analytics
+- 🔒 Secure authentication system
+- 📈 Body measurements and strength tracking
+- 🍎 Calorie intake monitoring
 
-📱 Responsive design for all devices
-🌐 Multilingual support (Estonian and Russian)
-📊 Comprehensive fitness tracking system
-📅 Integration with Google Calendar for booking
-💪 Progress monitoring and analytics
-🔒 Secure authentication system
-📈 Body measurements and strength tracking
-🍎 Calorie intake monitoring
+## Built With
 
-Built With
+- Node.js
+- Express.js
+- PostgreSQL
+- EJS
+- Bootstrap
+- Chart.js
+- Google Calendar API
 
-Node.js
-Express.js
-PostgreSQL
-EJS
-Bootstrap
-Chart.js
-Google Calendar API
+## Prerequisites
 
-Prerequisites
 Before you begin, ensure you have installed:
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
+- PostgreSQL (v13 or higher)
 
-Node.js (v14 or higher)
-npm (comes with Node.js)
-PostgreSQL (v13 or higher)
+## Installation
 
-Installation
-
-Clone the repository
-
-bashCopygit clone https://github.com/Artjomeller/Personaalnetreener.git
+1. Clone the repository
+```bash
+git clone https://github.com/Artjomeller/Personaalnetreener.git
 
 Navigate to the project directory
 
