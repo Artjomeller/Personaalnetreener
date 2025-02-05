@@ -50,12 +50,12 @@ cd Personaalnetreener
 npm install
 
 4. Create a .env file in the root directory and add the following variables:
-DB_HOST=your_database_host
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_DATABASE=your_database_name
-SECRET_KEY=your_jwt_secret_key
-GOOGLE_API_KEY=your_google_api_key
+- DB_HOST=your_database_host
+- DB_USER=your_database_user
+- DB_PASSWORD=your_database_password
+- DB_DATABASE=your_database_name
+- SECRET_KEY=your_jwt_secret_key
+- GOOGLE_API_KEY=your_google_api_key
 
 5. Set up the PostgreSQL database:
 - Create a new database
