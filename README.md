@@ -47,7 +47,7 @@ git clone https://github.com/Artjomeller/Personaalnetreener.git
 cd Personaalnetreener
 
 3. Install NPM packages
-npm install
+   `npm install`
 
 4. Create a .env file in the root directory and add the following variables:
 - DB_HOST=your_database_host
@@ -64,7 +64,7 @@ npm install
 
 
 6. Start the development server
-npm start
+   `npm start`
 
 The application should now be running on http://localhost:3000
 
