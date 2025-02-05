@@ -1,6 +1,6 @@
-# Personal Trainer Website & Fitness Tracker
+# 🏋️‍♂️Personal Trainer Website & Fitness Tracker
 
-## About The Project
+## 💻 About The Project 
 
 This project consists of a professional personal trainer website with an integrated fitness tracking system. The website serves as a platform for trainers to showcase their services and for clients to track their fitness progress.
 
@@ -10,7 +10,7 @@ Test account for fitness tracker:
 - Email: test@test.ee
 - Password: Parool1
 
-## Features
+## 🏆Features
 
 - 📱 Responsive design for all devices
 - 🌐 Multilingual support (Estonian and Russian)
@@ -21,24 +21,24 @@ Test account for fitness tracker:
 - 📈 Body measurements and strength tracking
 - 🍎 Calorie intake monitoring
 
-## Built With
+## 🔌Built With 
 
-- Node.js
-- Express.js
-- PostgreSQL
-- EJS
-- Bootstrap
-- Chart.js
-- Google Calendar API
+- 📌 Node.js
+- 📌 Express.js
+- 📌 PostgreSQL
+- 📌 EJS
+- 📌 Bootstrap
+- 📌 Chart.js
+- 📌 Google Calendar API
 
-## Prerequisites
+## 💣Prerequisites 
 
-Before you begin, ensure you have installed:
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
-- PostgreSQL (v13 or higher)
+🔩 Before you begin, ensure you have installed:
+- 📌 Node.js (v14 or higher)
+- 📌 npm (comes with Node.js)
+- 📌 PostgreSQL (v13 or higher)
 
-## Installation
+## ⚙️Installation
 
 1. Clone the repository
    `git clone https://github.com/Artjomeller/Personaalnetreener.git`
@@ -68,7 +68,7 @@ Before you begin, ensure you have installed:
 
 The application should now be running on http://localhost:3000
 
-## Database Setup
+## 💾Database Setup
 - Create a new PostgreSQL database
 - Run the following commands in PostgreSQL:
   `CREATE DATABASE personaalnetreener;`
@@ -78,7 +78,7 @@ The application should now be running on http://localhost:3000
   `psql -U your_username -d personaalnetreener -f database/schema.sql`
 
 
-### Contributing
+### 🙋‍♂️Contributing
 
 - Fork the Project
 - Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -86,11 +86,11 @@ The application should now be running on http://localhost:3000
 - Push to the Branch (`git push origin feature/AmazingFeature`)
 - Open a Pull Request
 
-### Issues and Bug Reports
+### 🙋‍♂️Issues and Bug Reports
 If you find any bugs or have feature suggestions, please create an issue in the GitHub repository.
 
-### License
+### 🙋‍♂️License
 Distributed under the MIT License. See **LICENSE** for more information.
 
-### Contact
+### 🙋‍♂️Contact
 - [www.linkedin.com/in/artjom-eller]
