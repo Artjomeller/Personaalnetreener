@@ -78,7 +78,7 @@ CREATE DATABASE personaalnetreener;
 psql -U your_username -d personaalnetreener -f database/schema.sql
 
 
-## Contributing
+### Contributing
 
 - Fork the Project
 - Create your Feature Branch (git checkout -b feature/AmazingFeature)
@@ -86,12 +86,12 @@ psql -U your_username -d personaalnetreener -f database/schema.sql
 - Push to the Branch (git push origin feature/AmazingFeature)
 - Open a Pull Request
 
-## Issues and Bug Reports
+### Issues and Bug Reports
 If you find any bugs or have feature suggestions, please create an issue in the GitHub repository.
 
-# License
+### License
 Distributed under the MIT License. See LICENSE for more information.
 
-# Contact
+### Contact
 Artjom Eller - GitHub
 Project Link: https://github.com/Artjomeller/Personaalnetreener
