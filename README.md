@@ -41,61 +41,57 @@ Before you begin, ensure you have installed:
 ## Installation
 
 1. Clone the repository
-```bash
 git clone https://github.com/Artjomeller/Personaalnetreener.git
 
-Navigate to the project directory
+2. Navigate to the project directory
+cd Personaalnetreener
 
-bashCopycd Personaalnetreener
+3. Install NPM packages
+npm install
 
-Install NPM packages
-
-bashCopynpm install
-
-Create a .env file in the root directory and add the following variables:
-
-envCopyDB_HOST=your_database_host
+4. Create a .env file in the root directory and add the following variables:
+DB_HOST=your_database_host
 DB_USER=your_database_user
 DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 SECRET_KEY=your_jwt_secret_key
 GOOGLE_API_KEY=your_google_api_key
 
-Set up the PostgreSQL database:
+5. Set up the PostgreSQL database:
+- Create a new database
+- Import the schema from database/schema.sql
+- Run migrations if any: npm run migrate
 
 
-Create a new database
-Import the schema from database/schema.sql
-Run migrations if any: npm run migrate
+6. Start the development server
+npm start
 
-
-Start the development server
-
-bashCopynpm start
 The application should now be running on http://localhost:3000
-Database Setup
 
-Create a new PostgreSQL database
-Run the following commands in PostgreSQL:
-
-sqlCopyCREATE DATABASE personaalnetreener;
+## Database Setup
+- Create a new PostgreSQL database
+- Run the following commands in PostgreSQL:
+CREATE DATABASE personaalnetreener;
 \c personaalnetreener
 
-Import the database schema:
+- Import the database schema:
+psql -U your_username -d personaalnetreener -f database/schema.sql
 
-bashCopypsql -U your_username -d personaalnetreener -f database/schema.sql
-Contributing
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+## Contributing
 
-Issues and Bug Reports
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/AmazingFeature)
+- Commit your Changes (git commit -m 'Add some AmazingFeature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
+
+## Issues and Bug Reports
 If you find any bugs or have feature suggestions, please create an issue in the GitHub repository.
-License
+
+# License
 Distributed under the MIT License. See LICENSE for more information.
-Contact
+
+# Contact
 Artjom Eller - GitHub
 Project Link: https://github.com/Artjomeller/Personaalnetreener
