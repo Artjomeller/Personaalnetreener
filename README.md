@@ -93,5 +93,5 @@ If you find any bugs or have feature suggestions, please create an issue in the 
 Distributed under the MIT License. See LICENSE for more information.
 
 ### Contact
-Artjom Eller - GitHub
-Project Link: https://github.com/Artjomeller/Personaalnetreener
+- Artjom Eller - GitHub
+- Project Link: https://github.com/Artjomeller/Personaalnetreener
