@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS body_data (
 );
 
 INSERT INTO body_data (email, height, weight, waist, chest, shoulders, biceps, forearms, neck, hips, calves)
-VALUES ('valnos04@gmail.com', 175.00, 70.00, 85.00, 95.00, 45.00, 35.00, 30.00, 38.00, 90.00, 35.00);
+VALUES ('artjomeller@gmail.com', 175.00, 70.00, 85.00, 95.00, 45.00, 35.00, 30.00, 38.00, 90.00, 35.00);
 
 CREATE TABLE IF NOT EXISTS strength_data (
     id SERIAL PRIMARY KEY,
